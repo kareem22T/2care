@@ -15,6 +15,9 @@
 			contain-intrinsic-size: 3000px 1500px
 		}
 	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+		integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
 	<link rel="alternate" type="application/rss+xml" title="عيادات توكير &laquo; الخلاصة"
 		href="https://2care.sa/feed/" />
@@ -1310,12 +1313,6 @@
 		media='all' />
 	<link rel='stylesheet' id='elementor-post-292-css'
 		href='https://2care.sa/wp-content/uploads/elementor/css/post-292.css?ver=1757431227' media='all' />
-	<link rel='stylesheet' id='font-awesome-shims-css'
-		href='https://2care.sa/wp-content/plugins/codevz-plus/admin/assets/css/font-awesome/css/v4-shims.min.css?ver=6.4.2'
-		media='all' />
-	<link rel='stylesheet' id='font-awesome-css'
-		href='https://2care.sa/wp-content/plugins/codevz-plus/admin/assets/css/font-awesome/css/all.min.css?ver=6.4.2'
-		media='all' />
 	<link rel='stylesheet' id='elementor-gf-local-roboto-css'
 		href='http://yalashbab.com/care/wp-content/uploads/elementor/google-fonts/css/roboto.css?ver=1756576903'
 		media='all' />
@@ -2866,6 +2863,11 @@
 			margin-left: 10px
 		}
 
+		    .highlight span {
+			font-weight: bold;
+			color: #f9ffff;
+			}
+
 		.quantity-up:hover {
 			color: #ffffff;
 			background-color: #5ca0d4
@@ -3013,7 +3015,15 @@
 			grid-template-columns: 6fr 3fr;
 			gap: 2rem;
 		}
+		.items-section-2 {
+			display: grid;
+			grid-template-columns: 3fr 6fr;
+			gap: 2rem;
+		}
 		.items-section p {
+			display: none;
+		}
+		.items-section-2 p {
 			display: none;
 		}
 		.elementor-292 .elementor-element .services .service_img:not(.service_number) {
@@ -3036,6 +3046,22 @@
 				object-fit: cover;
 			}
 		}
+		@media (max-width: 864px) {
+			.items-section-2 {
+				grid-template-columns: 1fr;
+			}
+			.items-section-2 h3{
+				font-size: 22px;
+			}
+			.items-section-2 .elementor-widget-container >div {
+				padding: 1rem !important;
+			}
+			.items-section-2 .elementor-element-4bfd1c1 img {
+				width: 100% !important;
+				height: 300px !important;
+				object-fit: cover;
+			}
+		}
 		@media (max-width: 480px) {
 			.e-con-inner {
 				grid-template-columns: 1fr 1fr !important;
@@ -3045,6 +3071,15 @@
 				font-size: 17px;
 				white-space: nowrap;
 				text-align: center;
+			}
+
+			.items-section-2 h3{
+				font-size: 17px;
+				white-space: nowrap;
+				text-align: center;
+			}
+			.items-section-2 .img-sec{
+				grid-row: 2;
 			}
 
 			.e-con-inner .service_img {
@@ -3082,14 +3117,22 @@
 							<div class="elms_right header_1_right">
 								<div class="cz_elm social_header_1_right_1 inner_social_header_1_right_0"
 									style="margin-top:19px;">
-									<div
-										class="cz_social cz_social_colored_bg_hover cz_social_fx_4 cz_tooltip cz_tooltip_up">
-										<a class="cz-facebook" href="#" data-title="فيسبوك" aria-label="فيسبوك"><i
-												class="fa fa-facebook"></i><span>فيسبوك</span></a><a
-											class="cz-x-twitter" href="#" data-title="× تويتر" aria-label="× تويتر"><i
-												class="fab fa-x-twitter"></i><span>× تويتر</span></a><a
-											class="cz-instagram" href="#" data-title="انستغرام" aria-label="انستغرام"><i
-												class="fa fa-instagram"></i><span>انستغرام</span></a></div>
+								<div class="cz_social cz_social_colored_bg_hover cz_social_fx_4 cz_tooltip cz_tooltip_up">
+									<a class="cz-tiktok" href="https://www.tiktok.com/@2care_sa?_t=ZS-8xnwcsyXAl5&_r=1" data-title="تيك توك"
+										aria-label="تيك توك">
+										<i class="fa-brands fa-tiktok"></i><span>تيك توك</span>
+									</a>
+									<a class="cz-snapchat" href="https://snapchat.com/t/9MBJyRYJ" data-title="سناب شات" aria-label="سناب شات">
+										<i class="fa-brands fa-snapchat"></i><span>سناب شات</span>
+									</a>
+									<a class="cz-instagram" href="https://www.instagram.com/2care_sa?igsh=MTVpeXM1djNycWZtYQ==" data-title="انستغرام"
+										aria-label="انستغرام">
+										<i class="fa-brands fa-instagram"></i><span>انستغرام</span>
+									</a>
+									<a class="cz-x-twitter" href="https://x.com/2care_sa?s=11" data-title="X تويتر" aria-label="X تويتر">
+										<i class="fa-brands fa-x-twitter"></i><span>X تويتر</span>
+									</a>
+								</div>
 								</div>
 								<div class="cz_elm menu_header_1_right_2 inner_menu_header_1_right_1"
 									style="margin-top:16px;margin-right:20px;margin-bottom:10px;margin-left:10px;">
@@ -3262,70 +3305,29 @@
 																	class="cz_title clr cz_mobile_text_center cz_title_pos_inline">
 																	<div class="cz_title_content">
 																		<div class="cz_wpe_content">
-																			<p>الرسالة : في مجمع توكير الطبي نقدم رعاية
-																				متكاملة لصحة الفم والأسنان، بالإضافة
-																				لخدمات التجميل والليزر، بأيدي أطباء
-																				واستشاريين سعوديين ذوي الخبرة والكفاءة.
+																			<p>
+																				في مجمع توكير الطبي نقدم رعاية متكاملة لصحة الفم والأسنان، بالإضافة لخدمات التجميل والليزر،
+																				بأيدي أطباء واستشاريين سعوديين ذوي خبرة وكفاءة.
 																			</p>
-																			<p>الرؤية : نهدف في توكير إلى أن نكون من
-																				العيادات الرائدة في طب الأنسان، والتجميل
-																				على مستوى المملكة العربية السعودية،
-																				لنكون وجهتك الأولى للحصول على علاج آمن
-																				وفعال ، ونتائج تجميلية ساحرة.</p>
+																			
+																			<p>
+																				نهدف في توكير إلى أن نكون من العيادات الرائدة في طب الأسنان والتجميل على مستوى المملكة العربية السعودية،
+																				لنكون وجهتك الأولى للحصول على علاج آمن وفعال، ونتائج تجميلية ساحرة.
+																			</p>
+																			
+																			<br>
+																			<h3>في توكير معيارنا…</h3>
+																			
+																			<p class="highlight"><span>الأمان:</span> ضمان سلامة المريض في مجمع توكير</p>
+																			<p class="highlight"><span>الخبرة:</span> فريق طبي متكامل على أعلى مستوى</p>
+																			<p class="highlight"><span>الإتقان:</span> الالتزام بأعلى معايير الجودة</p>
+																			<p class="highlight"><span>الابتكار:</span> مواكبة أحدث التقنيات الطبية والتجميلية</p>
+																			<p class="highlight"><span>الإلهام:</span> نساعدك في إضافة لمسة جمالية</p>
+																			<p class="highlight"><span>الالتزام:</span> احترام المواعيد، وتقديم خدمة مميزة</p>
 																		</div>
 																	</div>
 																</div>
 															</div>
-														</div>
-													</div>
-													<div class="elementor-element elementor-element-1c9fe44 elementor-widget elementor-widget-cz_stylish_list"
-														data-id="1c9fe44" data-element_type="widget"
-														data-widget_type="cz_stylish_list.default">
-														<div class="elementor-widget-container">
-															<ul class="cz_stylish_list clr cz_sl_icon_hover_none">
-																<li class="elementor-repeater-item-cb0c1a9 clr">
-																	<div class="cz_sl_icon"><i
-																			class="mr10 czi czico-Icon-Action-Favorite-On"></i>
-																	</div>
-																	<div><span>الأمان : ضمان سلامة المريض في مجمع
-																			توكير</span></div>
-																</li>
-																<li class="elementor-repeater-item-375f6c3 clr">
-																	<div class="cz_sl_icon"><i
-																			class="mr10 czi czico-Icon-Action-Favorite-On"></i>
-																	</div>
-																	<div><span>الخبرة : فريق طبي متكامل على أعلى
-																			مستوى</span></div>
-																</li>
-																<li class="elementor-repeater-item-8e61af5 clr">
-																	<div class="cz_sl_icon"><i
-																			class="mr10 czi czico-Icon-Action-Favorite-On"></i>
-																	</div>
-																	<div><span>الإتقان : الالتزام بأعلى معايير
-																			الجودة</span></div>
-																</li>
-																<li class="elementor-repeater-item-8d3900f clr">
-																	<div class="cz_sl_icon"><i
-																			class="mr10 czi czico-Icon-Action-Favorite-On"></i>
-																	</div>
-																	<div><span>الابتكار : مواكبة أحدث التقنيات الطبية
-																			والتجميلية </span></div>
-																</li>
-																<li class="elementor-repeater-item-d8c68f5 clr">
-																	<div class="cz_sl_icon"><i
-																			class="mr10 czi czico-Icon-Action-Favorite-On"></i>
-																	</div>
-																	<div><span>الإلهام : نساعدك في إضافة لمسة جمالية
-																		</span></div>
-																</li>
-																<li class="elementor-repeater-item-e745559 clr">
-																	<div class="cz_sl_icon"><i
-																			class="mr10 czi czico-Icon-Action-Favorite-On"></i>
-																	</div>
-																	<div><span>الالتزام : احترام المواعيد، وتقديم خدمة
-																			مميزة </span></div>
-																</li>
-															</ul>
 														</div>
 													</div>
 												</div>
@@ -3625,9 +3627,9 @@
 														</div>
 													</div>
 												</div>
-																								<div class="elementor-element elementor-element-4bfd1c1 elementor-hidden-mobile elementor-widget elementor-widget-image"
+																								<div class="elementor-element elementor-element-4bfd1c1  elementor-widget elementor-widget-image"
 																									data-id="4bfd1c1" data-element_type="widget" data-widget_type="image.default">
-																									<img loading="lazy" decoding="async" width="400" height="691"
+																									<img loading="lazy" decoding="async" style="display: block;" width="400" height="691"
 																										src="https://2care.sa/wp-content/uploads/2025/09/5243-1.jpg" class="attachment-large size-large wp-image-2386"
 																										alt=""
 																										srcset="https://2care.sa/wp-content/uploads/2025/09/5243-1.jpg 400w, https://2care.sa/wp-content/uploads/2025/09/5243-1-174x300.jpg 174w"
@@ -3636,6 +3638,7 @@
 
 										</div>
 									</div>
+
 									<section
 										class="elementor-section elementor-top-section elementor-element elementor-element-f84492c elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 										data-id="f84492c" data-element_type="section">
@@ -3678,260 +3681,183 @@
 											</div>
 										</div>
 									</section>
-									<section
-										class="elementor-section elementor-top-section elementor-element elementor-element-a2e6afc elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
-										data-id="a2e6afc" data-element_type="section"
-										data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
-										<div class="elementor-container elementor-column-gap-default">
-											<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-2621dfc"
-												data-id="2621dfc" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div class="elementor-element elementor-element-cf0b1a0 wpb_start_animation cz_brfx_down elementor-widget elementor-widget-cz_service_box"
-														data-id="cf0b1a0" data-element_type="widget"
-														data-widget_type="cz_service_box.default">
-														<div class="elementor-widget-container">
-															<div class="xtra-service-box-hove fx_zoom_0_hover">
-																<div
-																	class="services clr style11 cz_sbi_fx_9a services_b">
-																	<div class="service_img"><img loading="lazy"
-																			decoding="async" width="64" height="64"
-																			src="https://2care.sa/wp-content/uploads/2025/08/beauty.png"
-																			class="attachment-full size-full wp-image-2272"
-																			alt="" /></div>
-																	<div class="service_text">
-																		<h3>البوتكس والفيلر</h3>
-																		<div class="cz_wpe_content">
-																			<p>حقن البوتكس لتقليل التجاعيد وخطوط التعبير
-																				في الوجه لمنح مظهر أكثر شبابًا، حقن
-																				الفيلر لنضارة الوجه أو الشفاه وإبراز
-																				ملامح الوجه بشكل طبيعي ومتناسق</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-e4a76de"
-												data-id="e4a76de" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div class="elementor-element elementor-element-33ce656 wpb_start_animation cz_brfx_down elementor-widget elementor-widget-cz_service_box"
-														data-id="33ce656" data-element_type="widget"
-														data-widget_type="cz_service_box.default">
-														<div class="elementor-widget-container">
-															<div class="xtra-service-box-hove fx_zoom_0_hover">
-																<div
-																	class="services clr style11 cz_sbi_fx_9a services_b">
-																	<div class="service_img"><img loading="lazy"
-																			decoding="async" width="64" height="64"
-																			src="https://2care.sa/wp-content/uploads/2025/08/beauty.png"
-																			class="attachment-full size-full wp-image-2272"
-																			alt="" /></div>
-																	<div class="service_text">
-																		<h3>البوتكس والفيلر</h3>
-																		<div class="cz_wpe_content">
-																			<p>حقن البوتكس لتقليل التجاعيد وخطوط التعبير
-																				في الوجه لمنح مظهر أكثر شبابًا، حقن
-																				الفيلر لنضارة الوجه أو الشفاه وإبراز
-																				ملامح الوجه بشكل طبيعي ومتناسق</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-bb47084"
-												data-id="bb47084" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div class="elementor-element elementor-element-898a44f wpb_start_animation cz_brfx_down elementor-widget elementor-widget-cz_service_box"
-														data-id="898a44f" data-element_type="widget"
-														data-widget_type="cz_service_box.default">
-														<div class="elementor-widget-container">
-															<div class="xtra-service-box-hove fx_zoom_0_hover">
-																<div
-																	class="services clr style11 cz_sbi_fx_9a services_b">
-																	<div class="service_img"><img loading="lazy"
-																			decoding="async" width="64" height="64"
-																			src="https://2care.sa/wp-content/uploads/2025/08/beauty.png"
-																			class="attachment-full size-full wp-image-2272"
-																			alt="" /></div>
-																	<div class="service_text">
-																		<h3>البوتكس والفيلر</h3>
-																		<div class="cz_wpe_content">
-																			<p>حقن البوتكس لتقليل التجاعيد وخطوط التعبير
-																				في الوجه لمنح مظهر أكثر شبابًا، حقن
-																				الفيلر لنضارة الوجه أو الشفاه وإبراز
-																				ملامح الوجه بشكل طبيعي ومتناسق</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-92eb97e"
-												data-id="92eb97e" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div class="elementor-element elementor-element-c3a86b2 wpb_start_animation cz_brfx_down elementor-widget elementor-widget-cz_service_box"
-														data-id="c3a86b2" data-element_type="widget"
-														data-widget_type="cz_service_box.default">
-														<div class="elementor-widget-container">
-															<div class="xtra-service-box-hove fx_zoom_0_hover">
-																<div
-																	class="services clr style11 cz_sbi_fx_9a services_b">
-																	<div class="service_img"><img loading="lazy"
-																			decoding="async" width="64" height="64"
-																			src="https://2care.sa/wp-content/uploads/2025/08/beauty.png"
-																			class="attachment-full size-full wp-image-2272"
-																			alt="" /></div>
-																	<div class="service_text">
-																		<h3>البوتكس والفيلر</h3>
-																		<div class="cz_wpe_content">
-																			<p>حقن البوتكس لتقليل التجاعيد وخطوط التعبير
-																				في الوجه لمنح مظهر أكثر شبابًا، حقن
-																				الفيلر لنضارة الوجه أو الشفاه وإبراز
-																				ملامح الوجه بشكل طبيعي ومتناسق</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</section>
-									<section
-										class="elementor-section elementor-top-section elementor-element elementor-element-df042b3 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
-										data-id="df042b3" data-element_type="section"
-										data-settings="{&quot;animation&quot;:&quot;fadeInLeft&quot;}">
-										<div class="elementor-container elementor-column-gap-default">
-											<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-353d09e"
-												data-id="353d09e" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div class="elementor-element elementor-element-ca710c4 wpb_start_animation cz_brfx_down elementor-widget elementor-widget-cz_service_box"
-														data-id="ca710c4" data-element_type="widget"
-														data-widget_type="cz_service_box.default">
-														<div class="elementor-widget-container">
-															<div class="xtra-service-box-hove fx_zoom_0_hover">
-																<div
-																	class="services clr style11 cz_sbi_fx_9a services_b">
-																	<div class="service_img"><img loading="lazy"
-																			decoding="async" width="64" height="64"
-																			src="https://2care.sa/wp-content/uploads/2025/08/beauty.png"
-																			class="attachment-full size-full wp-image-2272"
-																			alt="" /></div>
-																	<div class="service_text">
-																		<h3>البوتكس والفيلر</h3>
-																		<div class="cz_wpe_content">
-																			<p>حقن البوتكس لتقليل التجاعيد وخطوط التعبير
-																				في الوجه لمنح مظهر أكثر شبابًا، حقن
-																				الفيلر لنضارة الوجه أو الشفاه وإبراز
-																				ملامح الوجه بشكل طبيعي ومتناسق</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-2c10cda"
-												data-id="2c10cda" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div class="elementor-element elementor-element-e3e5700 wpb_start_animation cz_brfx_down elementor-widget elementor-widget-cz_service_box"
-														data-id="e3e5700" data-element_type="widget"
-														data-widget_type="cz_service_box.default">
-														<div class="elementor-widget-container">
-															<div class="xtra-service-box-hove fx_zoom_0_hover">
-																<div
-																	class="services clr style11 cz_sbi_fx_9a services_b">
-																	<div class="service_img"><img loading="lazy"
-																			decoding="async" width="64" height="64"
-																			src="https://2care.sa/wp-content/uploads/2025/08/beauty.png"
-																			class="attachment-full size-full wp-image-2272"
-																			alt="" /></div>
-																	<div class="service_text">
-																		<h3>البوتكس والفيلر</h3>
-																		<div class="cz_wpe_content">
-																			<p>حقن البوتكس لتقليل التجاعيد وخطوط التعبير
-																				في الوجه لمنح مظهر أكثر شبابًا، حقن
-																				الفيلر لنضارة الوجه أو الشفاه وإبراز
-																				ملامح الوجه بشكل طبيعي ومتناسق</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ad855ac"
-												data-id="ad855ac" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div class="elementor-element elementor-element-a752d1d wpb_start_animation cz_brfx_down elementor-widget elementor-widget-cz_service_box"
-														data-id="a752d1d" data-element_type="widget"
-														data-widget_type="cz_service_box.default">
-														<div class="elementor-widget-container">
-															<div class="xtra-service-box-hove fx_zoom_0_hover">
-																<div
-																	class="services clr style11 cz_sbi_fx_9a services_b">
-																	<div class="service_img"><img loading="lazy"
-																			decoding="async" width="64" height="64"
-																			src="https://2care.sa/wp-content/uploads/2025/08/beauty.png"
-																			class="attachment-full size-full wp-image-2272"
-																			alt="" /></div>
-																	<div class="service_text">
-																		<h3>البوتكس والفيلر</h3>
-																		<div class="cz_wpe_content">
-																			<p>حقن البوتكس لتقليل التجاعيد وخطوط التعبير
-																				في الوجه لمنح مظهر أكثر شبابًا، حقن
-																				الفيلر لنضارة الوجه أو الشفاه وإبراز
-																				ملامح الوجه بشكل طبيعي ومتناسق</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-											<div class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-f9891de"
-												data-id="f9891de" data-element_type="column">
-												<div class="elementor-widget-wrap elementor-element-populated">
-													<div class="elementor-element elementor-element-001896b wpb_start_animation cz_brfx_down elementor-widget elementor-widget-cz_service_box"
-														data-id="001896b" data-element_type="widget"
-														data-widget_type="cz_service_box.default">
-														<div class="elementor-widget-container">
-															<div class="xtra-service-box-hove fx_zoom_0_hover">
-																<div
-																	class="services clr style11 cz_sbi_fx_9a services_b">
-																	<div class="service_img"><img loading="lazy"
-																			decoding="async" width="64" height="64"
-																			src="https://2care.sa/wp-content/uploads/2025/08/beauty.png"
-																			class="attachment-full size-full wp-image-2272"
-																			alt="" /></div>
-																	<div class="service_text">
-																		<h3>البوتكس والفيلر</h3>
-																		<div class="cz_wpe_content">
-																			<p>حقن البوتكس لتقليل التجاعيد وخطوط التعبير
-																				في الوجه لمنح مظهر أكثر شبابًا، حقن
-																				الفيلر لنضارة الوجه أو الشفاه وإبراز
-																				ملامح الوجه بشكل طبيعي ومتناسق</p>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</section>
+<div class="elementor-element elementor-element-f2b7061 fadeInLeft e-flex e-con-boxed elementor-invisible e-con e-parent"
+	data-id="f2b7061" data-element_type="container" id="#teeth"
+	data-settings="{&quot;animation&quot;:&quot;fadeInRight&quot;}">
+	<div class="items-section-2">
+		<div class="elementor-element img-sec elementor-element-4bfd1c1  elementor-widget elementor-widget-image"
+			data-id="4bfd1c1" data-element_type="widget" data-widget_type="image.default">
+			<img width="400" height="691"  style="display: block;"
+				src="./imgs/4088131.jpg" class="attachment-large size-large wp-image-2386"
+				alt=""
+				sizes="(max-width: 400px) 100vw, 400px" />
+		</div>
+		<div class="e-con-inner" style="display: grid;grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));gap: 1rem;">
+			<div class="elementor-element elementor-element-57bca99 elementor-widget elementor-widget-cz_service_box"
+				data-id="57bca99" data-element_type="widget" data-widget_type="cz_service_box.default">
+				<div class="elementor-widget-container">
+					<div class="services clr style11 cz_sbi_fx_9a services_b">
+						<div class="service_img"><img decoding="async" width="64" height="64" src="./imgs/botox.png"
+								class="attachment-full size-full wp-image-2221" alt="" /></div>
+						<div class="service_text">
+							<h3>البوتكس والفيلر</h3>
+							<div class="cz_wpe_content">
+								<p>علاج التسوس وإعادة بناء شكل ووظيفة السن، باستخدام
+									حشوات آمنة، وبلون الأسنان الطبيعي.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-545ea62 elementor-widget elementor-widget-cz_service_box"
+				data-id="545ea62" data-element_type="widget" data-widget_type="cz_service_box.default">
+				<div class="elementor-widget-container">
+					<div class="services clr style11 cz_sbi_fx_9a services_b">
+						<div class="service_img"><img decoding="async" width="64" height="64" src="./imgs/laser.png"
+								class="attachment-full size-full wp-image-2375" alt="" /></div>
+						<div class="service_text">
+							<h3>فراكشنال ليزر</h3>
+							<div class="cz_wpe_content">
+								<p><span style="font-weight: 400;">إنقاذ الأسنان
+										المتضررة من الالتهابات العميقة عن طريق تنظيف
+										القنوات العصبية وحشوها.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-db00833 elementor-widget elementor-widget-cz_service_box"
+				data-id="db00833" data-element_type="widget" data-widget_type="cz_service_box.default">
+				<div class="elementor-widget-container">
+					<div class="services clr style11 cz_sbi_fx_9a services_b">
+						<div class="service_img"><img loading="lazy" decoding="async" width="64" height="64"
+								src="./imgs/derma.png" class="attachment-full size-full wp-image-2376" alt="" /></div>
+						<div class="service_text">
+							<h3>ديرما بن</h3>
+							<div class="cz_wpe_content">
+								<p><span style="font-weight: 400;">تصحيح اعوجاج
+										الأسنان والفك باستخدام تقنيات حديثة، مثل
+										التقويم الشفاف أو المعدني.</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-cb145c3 elementor-widget elementor-widget-cz_service_box"
+				data-id="cb145c3" data-element_type="widget" data-widget_type="cz_service_box.default">
+				<div class="elementor-widget-container">
+					<div class="services clr style11 cz_sbi_fx_9a services_b">
+						<div class="service_img"><img loading="lazy" decoding="async" width="64" height="64"
+								src="./imgs/hair-removal.png" class="attachment-full size-full wp-image-2370" alt="" />
+						</div>
+						<div class="service_text">
+							<h3>ازالة الشعر باليزر</h3>
+							<div class="cz_wpe_content">
+								<p><span style="font-weight: 400;">معالجة مشكلات
+										الفم والفكين مثل خلع ضروس العقل، وأيضا علاج
+										التهابات ونزيف اللثة</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-0a8175c elementor-widget elementor-widget-cz_service_box"
+				data-id="0a8175c" data-element_type="widget" data-widget_type="cz_service_box.default">
+				<div class="elementor-widget-container">
+					<div class="services clr style11 cz_sbi_fx_9a services_b">
+						<div class="service_img"><img loading="lazy" decoding="async" width="64" height="64"
+								src="./imgs/mesotherapy.png" class="attachment-full size-full wp-image-2380" alt="" />
+						</div>
+						<div class="service_text">
+							<h3>الميزوثيرابي</h3>
+							<div class="cz_wpe_content">
+								<p>تحسين شكل الأسنان الأمامية وإصلاح العيوب للحصول
+									على ابتسامة مثالية.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-5a39cbb elementor-widget elementor-widget-cz_service_box"
+				data-id="5a39cbb" data-element_type="widget" data-widget_type="cz_service_box.default">
+				<div class="elementor-widget-container">
+					<div class="services clr style11 cz_sbi_fx_9a services_b">
+						<div class="service_img"><img loading="lazy" decoding="async" width="64" height="64"
+								src="./imgs/chemical-peel.png" class="attachment-full size-full wp-image-2379" alt="" />
+						</div>
+						<div class="service_text">
+							<h3>التقشير الكميائي</h3>
+							<div class="cz_wpe_content">
+								<p>إزالة الرواسب الجيرية والبقع السطحية للحفاظ على
+									صحة اللثة، ومنح الأسنان مظهرًا نظيفًا ومشرقًا.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-5568223 elementor-widget elementor-widget-cz_service_box"
+				data-id="5568223" data-element_type="widget" data-widget_type="cz_service_box.default">
+				<div class="elementor-widget-container">
+					<div class="services clr style11 cz_sbi_fx_9a services_b">
+						<div class="service_img"><img loading="lazy" decoding="async" width="64" height="64"
+								src="./imgs/cleansing.png" class="attachment-full size-full wp-image-2377" alt="" />
+						</div>
+						<div class="service_text">
+							<h3>تنظيف بشرة</h3>
+							<div class="cz_wpe_content">
+								<p>استبدال الأسنان المفقودة بجذور صناعية ثابتة تشبه
+									الأسنان الطبيعية في الشكل والوظيفة.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-d6179a9 elementor-widget elementor-widget-cz_service_box"
+				data-id="d6179a9" data-element_type="widget" data-widget_type="cz_service_box.default">
+				<div class="elementor-widget-container">
+					<div class="services clr style11 cz_sbi_fx_9a services_b">
+						<div class="service_img"><img loading="lazy" decoding="async" width="64" height="64"
+								src="./imgs/hair-loss.png" class="attachment-full size-full wp-image-2381" alt="" />
+						</div>
+						<div class="service_text">
+							<h3>علاج تساقط الشعر</h3>
+							<div class="cz_wpe_content">
+								<p>فحص وعلاج أسنان الأطفال بطريقة مريحة ولطيفة، مع
+									إرشادهم لطرق العناية الصحيحة بأسنانهم.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="elementor-element elementor-element-6ed516f elementor-widget elementor-widget-cz_service_box"
+				data-id="6ed516f" data-element_type="widget" data-widget_type="cz_service_box.default">
+				<div class="elementor-widget-container">
+					<div class="services clr style11 cz_sbi_fx_9a services_b">
+						<div class="service_img"><img loading="lazy" decoding="async" width="64" height="64"
+								src="./imgs/plasma.png" class="attachment-full size-full wp-image-2378" alt="" /></div>
+						<div class="service_text">
+							<h3>البلازما الدموية</h3>
+							<div class="cz_wpe_content">
+								<p>بدائل صناعية تستخدم لتعويض الأسنان المفقودة أو
+									التالفة، لاستعادة وظيفتي المضغ والنطق، وتحسين
+									المظهر الجمالي للفم.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 									<section
 										class="elementor-section elementor-top-section elementor-element elementor-element-0c0e892 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
 										data-id="0c0e892" data-element_type="section">
@@ -4334,8 +4260,8 @@
 							data-id="6b2c11b" data-element_type="section">
 							<div class="elementor-container elementor-column-gap-default">
 								<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d8ddd14"
-									data-id="d8ddd14" data-element_type="column">
-									<div class="elementor-widget-wrap elementor-element-populated">
+									data-id="d8ddd14" data-element_type="column" style="display: flex;flex-direction: column;justify-content: center;align-items: center;">
+									<div class="elementor-widget-wrap elementor-element-populated"  style="display: flex;flex-direction: column;justify-content: center;align-items: center;gap: 10px">
 										<div class="elementor-element elementor-element-54d4e36 elementor-widget elementor-widget-image"
 											data-id="54d4e36" data-element_type="widget"
 											data-widget_type="image.default">
@@ -4346,10 +4272,33 @@
 												sizes="(max-width: 344px) 100vw, 344px" />
 										</div>
 										<div class="elementor-element elementor-element-0ca7788 elementor-widget elementor-widget-heading"
-											data-id="0ca7788" data-element_type="widget"
-											data-widget_type="heading.default">
-											<h3 class="elementor-heading-title elementor-size-default">الخط الساخن :
-												01235678912</h3>
+										data-id="0ca7788" data-element_type="widget"
+										data-widget_type="heading.default">
+										
+										<h3 class="elementor-heading-title elementor-size-default">الخط الساخن :
+											0535-222-751</h3>
+										</div>
+										<a href="">
+											<div class="fa fa-location"></div>
+											الرياض-حي الصحافة- شارع الامام سعود بن فيصل
+										</a>
+
+<div class="cz_social cz_social_colored_bg_hover cz_social_fx_4 cz_tooltip cz_tooltip_up">
+	<a class="cz-tiktok" href="https://www.tiktok.com/@2care_sa?_t=ZS-8xnwcsyXAl5&_r=1" data-title="تيك توك"
+		aria-label="تيك توك">
+		<i class="fa-brands fa-tiktok"></i><span>تيك توك</span>
+	</a>
+	<a class="cz-snapchat" href="https://snapchat.com/t/9MBJyRYJ" data-title="سناب شات" aria-label="سناب شات">
+		<i class="fa-brands fa-snapchat"></i><span>سناب شات</span>
+	</a>
+	<a class="cz-instagram" href="https://www.instagram.com/2care_sa?igsh=MTVpeXM1djNycWZtYQ==" data-title="انستغرام"
+		aria-label="انستغرام">
+		<i class="fa-brands fa-instagram"></i><span>انستغرام</span>
+	</a>
+	<a class="cz-x-twitter" href="https://x.com/2care_sa?s=11" data-title="X تويتر" aria-label="X تويتر">
+		<i class="fa-brands fa-x-twitter"></i><span>X تويتر</span>
+	</a>
+</div>
 										</div>
 										<div class="elementor-element elementor-element-d0dcce7 elementor-widget elementor-widget-cz_free_line"
 											data-id="d0dcce7" data-element_type="widget"
@@ -4411,7 +4360,7 @@
 	<script type="speculationrules">
          {"prefetch":[{"source":"document","where":{"and":[{"href_matches":"\/*"},{"not":{"href_matches":["\/wp-*.php","\/wp-admin\/*","\/wp-content\/uploads\/*","\/wp-content\/*","\/wp-content\/plugins\/*","\/wp-content\/themes\/xtra\/*","\/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
       </script>
-	<i class="fa fa-angle-up backtotop"></i><i class="fa fa-envelope-o fixed_contact"></i>
+	<i class="fa fa-angle-up backtotop"></i>
 	<div class="fixed_contact">
 		<style>
 			.elementor-388 .elementor-element.elementor-element-0351144 .cz_cf7 label {
